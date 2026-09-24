@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Tours</title>
+    <title>Star Tours Flights</title>
+    <script src="landing.js"></script>
+    <style>
+        .skip-content > a{
+            /* display: none; */
+            position: absolute;
+            top: -100px;
+            left: 0;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+            background-color: aqua;
+        }
+        .skip-content a:focus {
+            top: 0;
+        }
+    </style>
 </head>
 <body>
+    <div class="skip-content">
+        <a href="#main-content-section">skip to main content</a>
+    </div>
     <header>
         <div>logo</div><div>log in elements</div>
     </header>
@@ -13,7 +34,7 @@
         <p>Flight Deals Across the Galaxy | Start Your Adventure Today</p>
         <div class="flight-search-bar"></div>
     </div>
-    <div class="main-section">
+    <div class="main-section" id="main-content-section">
         <div class="dynamic-sale-section">
             <div class="dynamic-sale title-section">
                 <!-- can grab span tags to change markup for dynamic sale section -->
@@ -49,3 +70,6 @@
     </div>
 </body>
 </html>
+
+<!-- for accessibility ,starting with tab control and a link that lets you skip navigation elements and go straight to main content -->
+ <!-- what is a section element -->
