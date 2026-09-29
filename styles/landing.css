@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: rgb(82, 94, 146);
+    margin: 0;
+    padding: 0px 20px;
+}
