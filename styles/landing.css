@@ -5,8 +5,96 @@ body {
 .landing-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
-    background-color: rgb(82, 94, 146);
     margin: 0;
     padding: 0px 20px;
+}
+
+.banner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(82, 94, 146);
+}
+
+.banner-section > .banner-section-content {
+    margin: 20px;
+}
+
+.banner-section > .banner-section-content p {
+    font-size: 32px;
+    color: white;
+}
+
+.banner-section > .banner-section-content > .flight-search-bar {
+    height: 100px;
+    background-color: white;
+}
+
+.dynamic-sale-section {
+    margin: 0px 20px;
+}
+
+.dynamic-sale.search-bar-section {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.dynamic-sale.flight-cards {
+    display: grid;
+    margin-top: 20px;
+}
+
+
+.dynamic-sale.flight-card {
+    width: 80vw;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dynamic-sale.flight-card > .flight-card-image {
+    height: 150px;
+    width: 100%;
+    background-color: purple;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.flight-card-contents {
+    padding: 10px;
+}
+
+.flight-card-destinations-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.flight-card-rates {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* @media (width >= 768px) {
+    body {
+        font-size: 16px;
+    }
+} */
+  
+  
+@media (width >= 1024px) {
+    .banner-section {
+        height: 300px;
+    }
+    .dynamic-sale.flight-cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .dynamic-sale.flight-card {
+        width: 100%;
+    }
 }
