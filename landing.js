@@ -5,12 +5,9 @@
 
 //default exports don't need curly brackets
 
-import flightCardData from "flightCardData.js"
-
+import { flightCardData } from "./flightCardData.js"
 
 function makeFlightCards(data) {
-    //get data from json/js
-    const flightCardSection = document.querySelector(".dynamic-sale.flight-cards")
     function makeFlightCard(flightData) {
         return `
             <div class="dynamic-sale flight-card">
@@ -40,6 +37,7 @@ function makeFlightCards(data) {
     }
     function renderFlightCards(flightCards) {
         const html = flightCards.map(makeFlightCard).join("");
+        const flightCardSection = document.querySelector("section.dynamic-sale.flight-cards");
         flightCardSection.replaceChildren();
         //flightCardSection.insertAdjacentHTML(position:insert beforeBegin afterBegin beforeEnd afterEnd, html )
         flightCardSection.insertAdjacentHTML("afterbegin", html);

@@ -1,4 +1,4 @@
-flightCardData = [
+export const flightCardData = [
     {
         destination: "Tatooine",
         departure: "Jakku"
@@ -7,6 +7,4 @@ flightCardData = [
         destination: "Hoth",
         departure: "Endor"
     }
-]
-
-export default flightCardData;
+];
