@@ -1,0 +1,51 @@
+/* 1. Declaring the variables */
+:root {
+--primary-color: #3498db;
+--main-padding: 16px;
+--border-radius: 8px;
+}
+/* when you zoom into a website, it changes the root sizes, so relative measurements are better than pixel ones */
+
+/* 2. Using the variables */
+.button {
+background-color: var(--primary-color);
+padding: var(--main-padding);
+border-radius: var(--border-radius);
+}
+
+.card {
+    --card-bg: #f9f9f9; /* Only available inside .card */
+    background-color: var(--card-bg);
+}
+
+.text {
+    /* Uses --text-color if it exists, otherwise falls back to black */
+    color: var(--text-color, #000000); 
+}
+
+section.this-section {
+    color: red;
+    > h2 {
+        color: purple;
+        font-size: clamp(3.3rem, 8vw, 6.5rem);
+    }
+}
+/* what is the min size, what should it try to be, and the max size */
+/* rem font sizesssss REMMMMM */
+/* em is relative to container and rem is relative to root */
+/* utopia.fyi */
+/* aria-hidden=true makes audio system skip it */
+/* the default 16px is kinda smmall now, they use 18-20 as the min now */
+
+
+/* can use media query to make animation length super short so they basically just happen instantly for people who get motion sick */
+
+/* the following are good to always add to project */
+* {
+    box-sizing: border-box;
+}
+/* this makes width 100% refer to total width and not content width */
+img {
+    max-width: 100%;
+}
+/* tells the image the biggest it can be is the size of the container */

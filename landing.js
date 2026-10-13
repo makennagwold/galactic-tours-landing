@@ -54,4 +54,4 @@ function updateFares(element) {
     const price = 3000;
     flightCardRates.textContent = `${price} credits`;
     console.log(element, flightCardContents, flightCardRates);
-  }
+}
