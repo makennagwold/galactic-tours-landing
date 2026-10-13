@@ -20,7 +20,7 @@ function makeFlightCards(data) {
                             <span class="arrival-planet">${flightData.destination}</span>
                         </div>
                         <div class="flight-card-dates">
-                            <p>XX/XX/XXXX - XX/XX/XXXX</p>
+                            <p>XX/XX/XXXX - XX/XX/XXXX</p> blah blah blah
                         </div>
                     </div>
                     <div class="flight-card-rates">
